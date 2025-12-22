@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "multichain.wallet.router-api/*": ["./src/*"],
-      "multichain.wallet.router-api": ["./src/index.ts"]
+      "@paxeer-network/multichain.wallet.router-api/*": ["./src/*"],
+      "@paxeer-network/multichain.wallet.router-api": ["./src/index.ts"]
     },
     "noEmit": true,
 

@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { MultichainWalletRouterAPI } from 'multichain.wallet.router-api';
+import { MultichainWalletRouterAPI } from '@paxeer-network/multichain.wallet.router-api';
 
 const { stringifyQuery } = MultichainWalletRouterAPI.prototype as any;
 
