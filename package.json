@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:stainless-sdks/multichain.wallet.router-api-typescript",
+  "repository": "github:the-opennet-foundation/multichain.wallet.router-api",
   "license": "Apache-2.0",
   "packageManager": "pnpm@10.24.0",
   "files": [
