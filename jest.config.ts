@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^multichain.wallet.router-api$': '<rootDir>/src/index.ts',
-    '^multichain.wallet.router-api/(.*)$': '<rootDir>/src/$1',
+    '^@paxeer-network/multichain.wallet.router-api$': '<rootDir>/src/index.ts',
+    '^@paxeer-network/multichain.wallet.router-api/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
