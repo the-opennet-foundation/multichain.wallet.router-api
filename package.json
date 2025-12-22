@@ -1,5 +1,5 @@
 {
-  "name": "multichain.wallet.router-api",
+  "name": "@paxeer-network/multichain.wallet.router-api",
   "version": "0.0.1",
   "description": "The official TypeScript library for the Multichain Wallet Router API API",
   "author": "Multichain Wallet Router API <>",

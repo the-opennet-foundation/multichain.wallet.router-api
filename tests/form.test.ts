@@ -1,5 +1,8 @@
-import { multipartFormRequestOptions, createForm } from 'multichain.wallet.router-api/internal/uploads';
-import { toFile } from 'multichain.wallet.router-api/core/uploads';
+import {
+  multipartFormRequestOptions,
+  createForm,
+} from '@paxeer-network/multichain.wallet.router-api/internal/uploads';
+import { toFile } from '@paxeer-network/multichain.wallet.router-api/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
