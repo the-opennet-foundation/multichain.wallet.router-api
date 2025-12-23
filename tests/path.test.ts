@@ -1,7 +1,7 @@
 import {
   createPathTagFunction,
   encodeURIPath,
-} from '@paxeer-network/multichain.wallet.router-api/internal/utils/path';
+} from '@paxeer-network/multichain-wallet-router-api/internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 

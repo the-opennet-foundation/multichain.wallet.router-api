@@ -55,12 +55,12 @@ $ cd multichain.wallet.router-api
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link @paxeer-network/multichain.wallet.router-api
+$ yarn link @paxeer-network/multichain-wallet-router-api
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global @paxeer-network/multichain.wallet.router-api
+$ pnpm link -—global @paxeer-network/multichain-wallet-router-api
 ```
 
 ## Running tests
