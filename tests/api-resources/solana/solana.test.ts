@@ -38,7 +38,11 @@ describe('resource solana', () => {
     await expect(
       client.solana.listSignatures(
         'address',
-        { before: 'before', limit: 1000, until: 'until' },
+        {
+          before: 'before',
+          limit: 1000,
+          until: 'until',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(MultichainWalletRouterAPI.NotFoundError);

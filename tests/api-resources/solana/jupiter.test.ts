@@ -65,7 +65,10 @@ describe('resource jupiter', () => {
 
   // Prism tests are disabled
   test.skip('swap: only required params', async () => {
-    const responsePromise = client.solana.jupiter.swap({ quoteResponse: {}, userPublicKey: 'userPublicKey' });
+    const responsePromise = client.solana.jupiter.swap({
+      quoteResponse: {},
+      userPublicKey: 'userPublicKey',
+    });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -77,6 +80,9 @@ describe('resource jupiter', () => {
 
   // Prism tests are disabled
   test.skip('swap: required and optional params', async () => {
-    const response = await client.solana.jupiter.swap({ quoteResponse: {}, userPublicKey: 'userPublicKey' });
+    const response = await client.solana.jupiter.swap({
+      quoteResponse: {},
+      userPublicKey: 'userPublicKey',
+    });
   });
 });
