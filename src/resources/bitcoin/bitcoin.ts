@@ -104,12 +104,12 @@ export interface BitcoinGetHashrateParams {
 
 export interface BitcoinGetUtxoParams {
   /**
-   * Path param:
+   * Path param
    */
   txid: string;
 
   /**
-   * Query param:
+   * Query param
    */
   includeMempool?: boolean;
 }

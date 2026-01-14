@@ -53,7 +53,7 @@ export class Block extends APIResource {
 
 export interface BlockGetByNumberParams {
   /**
-   * Path param:
+   * Path param
    */
   chainId:
     | 'ethereum'
@@ -72,7 +72,7 @@ export interface BlockGetByNumberParams {
     | 'hyperliquid';
 
   /**
-   * Query param:
+   * Query param
    */
   fullTxs?: boolean;
 }
