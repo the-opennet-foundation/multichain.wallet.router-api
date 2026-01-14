@@ -41,7 +41,7 @@ export class Token extends APIResource {
 
 export interface TokenGetAllowanceParams {
   /**
-   * Path param:
+   * Path param
    */
   chainId:
     | 'ethereum'
@@ -60,12 +60,12 @@ export interface TokenGetAllowanceParams {
     | 'hyperliquid';
 
   /**
-   * Query param:
+   * Query param
    */
   owner: string;
 
   /**
-   * Query param:
+   * Query param
    */
   spender: string;
 }

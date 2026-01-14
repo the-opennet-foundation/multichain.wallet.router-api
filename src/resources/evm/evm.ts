@@ -259,7 +259,7 @@ export interface EvmGetNFTMetadataParams {
 
 export interface EvmGetNFTsParams {
   /**
-   * Path param:
+   * Path param
    */
   chainId:
     | 'ethereum'
@@ -278,12 +278,12 @@ export interface EvmGetNFTsParams {
     | 'hyperliquid';
 
   /**
-   * Query param:
+   * Query param
    */
   pageKey?: string;
 
   /**
-   * Query param:
+   * Query param
    */
   pageSize?: number;
 }
@@ -326,7 +326,7 @@ export interface EvmGetTokensParams {
 
 export interface EvmGetTransactionHistoryParams {
   /**
-   * Path param:
+   * Path param
    */
   chainId:
     | 'ethereum'
@@ -345,27 +345,27 @@ export interface EvmGetTransactionHistoryParams {
     | 'hyperliquid';
 
   /**
-   * Query param:
+   * Query param
    */
   category?: string;
 
   /**
-   * Query param:
+   * Query param
    */
   fromBlock?: string;
 
   /**
-   * Query param:
+   * Query param
    */
   maxCount?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   pageKey?: string;
 
   /**
-   * Query param:
+   * Query param
    */
   toBlock?: string;
 }

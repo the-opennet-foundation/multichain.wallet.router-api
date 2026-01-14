@@ -98,7 +98,7 @@ export interface ExplorerGetTokenInfoParams {
 
 export interface ExplorerGetTokentxParams {
   /**
-   * Path param:
+   * Path param
    */
   chainId:
     | 'ethereum'
@@ -117,24 +117,24 @@ export interface ExplorerGetTokentxParams {
     | 'hyperliquid';
 
   /**
-   * Query param:
+   * Query param
    */
   contractAddress?: string;
 
   /**
-   * Query param:
+   * Query param
    */
   offset?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   page?: number;
 }
 
 export interface ExplorerGetTxlistParams {
   /**
-   * Path param:
+   * Path param
    */
   chainId:
     | 'ethereum'
@@ -153,17 +153,17 @@ export interface ExplorerGetTxlistParams {
     | 'hyperliquid';
 
   /**
-   * Query param:
+   * Query param
    */
   offset?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   page?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   sort?: 'asc' | 'desc';
 }

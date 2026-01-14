@@ -199,17 +199,17 @@ export interface AssetListAssetsByCreatorParams {
 
 export interface AssetListAssetsByGroupParams {
   /**
-   * Path param:
+   * Path param
    */
   groupKey: string;
 
   /**
-   * Query param:
+   * Query param
    */
   limit?: number;
 
   /**
-   * Query param:
+   * Query param
    */
   page?: number;
 }
