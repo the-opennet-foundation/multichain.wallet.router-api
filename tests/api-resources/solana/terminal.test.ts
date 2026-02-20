@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource terminal', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getChart: only required params', async () => {
     const responsePromise = client.solana.terminal.getChart('assetId', {
       time_from: 0,
@@ -24,7 +24,7 @@ describe('resource terminal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getChart: required and optional params', async () => {
     const response = await client.solana.terminal.getChart('assetId', {
       time_from: 0,
@@ -33,7 +33,7 @@ describe('resource terminal', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDescription', async () => {
     const responsePromise = client.solana.terminal.getDescription('assetId');
     const rawResponse = await responsePromise.asResponse();
@@ -45,7 +45,7 @@ describe('resource terminal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHolders', async () => {
     const responsePromise = client.solana.terminal.getHolders('assetId');
     const rawResponse = await responsePromise.asResponse();
@@ -57,7 +57,7 @@ describe('resource terminal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPools: only required params', async () => {
     const responsePromise = client.solana.terminal.getPools({ assetIds: 'assetIds' });
     const rawResponse = await responsePromise.asResponse();
@@ -69,12 +69,12 @@ describe('resource terminal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPools: required and optional params', async () => {
     const response = await client.solana.terminal.getPools({ assetIds: 'assetIds' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getRecentTrades', async () => {
     const responsePromise = client.solana.terminal.getRecentTrades('assetId');
     const rawResponse = await responsePromise.asResponse();
@@ -86,7 +86,7 @@ describe('resource terminal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getRecentTrades: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -98,7 +98,7 @@ describe('resource terminal', () => {
     ).rejects.toThrow(MultichainWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokens', async () => {
     const responsePromise = client.solana.terminal.getTokens();
     const rawResponse = await responsePromise.asResponse();
@@ -110,7 +110,7 @@ describe('resource terminal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokens: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

@@ -1,6 +1,6 @@
 {
   "name": "@paxeer-network/multichain-wallet-router-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The official TypeScript library for the Multichain Wallet Router API API",
   "author": "Multichain Wallet Router API <>",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
   "type": "commonjs",
   "repository": "github:the-opennet-foundation/multichain.wallet.router-api",
   "license": "Apache-2.0",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.27.0",
   "files": [
     "**/*"
   ],

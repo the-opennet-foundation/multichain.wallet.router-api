@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource txs', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAll', async () => {
     const responsePromise = client.bitcoin.address.txs.getAll('address');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource txs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPaginated', async () => {
     const responsePromise = client.bitcoin.address.txs.getPaginated('address');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource txs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPaginated: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

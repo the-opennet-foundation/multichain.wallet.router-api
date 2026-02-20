@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource token', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listLargestAccounts', async () => {
     const responsePromise = client.solana.token.listLargestAccounts('mint');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource token', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveBalance', async () => {
     const responsePromise = client.solana.token.retrieveBalance('tokenAccount');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource token', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTotalSupply', async () => {
     const responsePromise = client.solana.token.retrieveTotalSupply('mint');
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource mempool', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getInfo', async () => {
     const responsePromise = client.bitcoin.mempool.getInfo();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource mempool', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getProjectedBlocks', async () => {
     const responsePromise = client.bitcoin.mempool.getProjectedBlocks();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource mempool', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getRaw', async () => {
     const responsePromise = client.bitcoin.mempool.getRaw();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource mempool', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getRaw: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

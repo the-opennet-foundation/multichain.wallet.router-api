@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource stake', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getActivationStatus', async () => {
     const responsePromise = client.solana.stake.getActivationStatus('account');
     const rawResponse = await responsePromise.asResponse();

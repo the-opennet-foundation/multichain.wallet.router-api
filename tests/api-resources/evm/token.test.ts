@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource token', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAllowance: only required params', async () => {
     const responsePromise = client.evm.token.getAllowance('tokenAddress', {
       chainId: 'ethereum',
@@ -24,7 +24,7 @@ describe('resource token', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAllowance: required and optional params', async () => {
     const response = await client.evm.token.getAllowance('tokenAddress', {
       chainId: 'ethereum',
@@ -33,7 +33,7 @@ describe('resource token', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getMetadata: only required params', async () => {
     const responsePromise = client.evm.token.getMetadata('tokenAddress', { chainId: 'ethereum' });
     const rawResponse = await responsePromise.asResponse();
@@ -45,7 +45,7 @@ describe('resource token', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getMetadata: required and optional params', async () => {
     const response = await client.evm.token.getMetadata('tokenAddress', { chainId: 'ethereum' });
   });

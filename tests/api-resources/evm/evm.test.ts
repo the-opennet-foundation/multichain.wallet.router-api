@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource evm', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('callContract', async () => {
     const responsePromise = client.evm.callContract('ethereum', {});
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getBalance: only required params', async () => {
     const responsePromise = client.evm.getBalance('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -34,14 +34,14 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getBalance: required and optional params', async () => {
     const response = await client.evm.getBalance('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getContractCode: only required params', async () => {
     const responsePromise = client.evm.getContractCode('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -55,14 +55,14 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getContractCode: required and optional params', async () => {
     const response = await client.evm.getContractCode('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNFTMetadata: only required params', async () => {
     const responsePromise = client.evm.getNFTMetadata('tokenId', {
       chainId: 'ethereum',
@@ -77,7 +77,7 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNFTMetadata: required and optional params', async () => {
     const response = await client.evm.getNFTMetadata('tokenId', {
       chainId: 'ethereum',
@@ -85,7 +85,7 @@ describe('resource evm', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNFTs: only required params', async () => {
     const responsePromise = client.evm.getNFTs('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -99,7 +99,7 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNFTs: required and optional params', async () => {
     const response = await client.evm.getNFTs('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -108,7 +108,7 @@ describe('resource evm', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNonce: only required params', async () => {
     const responsePromise = client.evm.getNonce('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -122,14 +122,14 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNonce: required and optional params', async () => {
     const response = await client.evm.getNonce('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokens: only required params', async () => {
     const responsePromise = client.evm.getTokens('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -143,14 +143,14 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokens: required and optional params', async () => {
     const response = await client.evm.getTokens('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactionHistory: only required params', async () => {
     const responsePromise = client.evm.getTransactionHistory('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -164,7 +164,7 @@ describe('resource evm', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactionHistory: required and optional params', async () => {
     const response = await client.evm.getTransactionHistory('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
@@ -176,7 +176,7 @@ describe('resource evm', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('simulateTransaction', async () => {
     const responsePromise = client.evm.simulateTransaction('ethereum', {});
     const rawResponse = await responsePromise.asResponse();

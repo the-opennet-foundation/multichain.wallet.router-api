@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource jupiter', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrice: only required params', async () => {
     const responsePromise = client.solana.jupiter.getPrice({ ids: 'ids' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource jupiter', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrice: required and optional params', async () => {
     const response = await client.solana.jupiter.getPrice({ ids: 'ids' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getQuote: only required params', async () => {
     const responsePromise = client.solana.jupiter.getQuote({
       amount: 0,
@@ -41,7 +41,7 @@ describe('resource jupiter', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getQuote: required and optional params', async () => {
     const response = await client.solana.jupiter.getQuote({
       amount: 0,
@@ -51,7 +51,7 @@ describe('resource jupiter', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTokens', async () => {
     const responsePromise = client.solana.jupiter.getTokens();
     const rawResponse = await responsePromise.asResponse();
@@ -63,9 +63,12 @@ describe('resource jupiter', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('swap: only required params', async () => {
-    const responsePromise = client.solana.jupiter.swap({ quoteResponse: {}, userPublicKey: 'userPublicKey' });
+    const responsePromise = client.solana.jupiter.swap({
+      quoteResponse: {},
+      userPublicKey: 'userPublicKey',
+    });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -75,8 +78,11 @@ describe('resource jupiter', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('swap: required and optional params', async () => {
-    const response = await client.solana.jupiter.swap({ quoteResponse: {}, userPublicKey: 'userPublicKey' });
+    const response = await client.solana.jupiter.swap({
+      quoteResponse: {},
+      userPublicKey: 'userPublicKey',
+    });
   });
 });
