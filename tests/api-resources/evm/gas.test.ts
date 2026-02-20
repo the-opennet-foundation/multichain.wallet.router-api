@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource gas', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('estimate', async () => {
     const responsePromise = client.evm.gas.estimate('ethereum', {});
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource gas', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrice', async () => {
     const responsePromise = client.evm.gas.getPrice('ethereum');
     const rawResponse = await responsePromise.asResponse();

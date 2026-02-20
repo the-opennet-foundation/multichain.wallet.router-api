@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource block', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getBest', async () => {
     const responsePromise = client.bitcoin.block.getBest();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByHash', async () => {
     const responsePromise = client.bitcoin.block.getByHash('hash');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByHash: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -40,7 +40,7 @@ describe('resource block', () => {
     ).rejects.toThrow(MultichainWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByHeight', async () => {
     const responsePromise = client.bitcoin.block.getByHeight(0);
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHeader', async () => {
     const responsePromise = client.bitcoin.block.getHeader('hash');
     const rawResponse = await responsePromise.asResponse();
@@ -64,7 +64,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHeader: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -72,7 +72,7 @@ describe('resource block', () => {
     ).rejects.toThrow(MultichainWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.bitcoin.block.getStats('hash');
     const rawResponse = await responsePromise.asResponse();
@@ -84,7 +84,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTip', async () => {
     const responsePromise = client.bitcoin.block.getTip();
     const rawResponse = await responsePromise.asResponse();
@@ -96,7 +96,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactionIDs', async () => {
     const responsePromise = client.bitcoin.block.getTransactionIDs('hash');
     const rawResponse = await responsePromise.asResponse();
@@ -108,7 +108,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactions', async () => {
     const responsePromise = client.bitcoin.block.getTransactions('hash');
     const rawResponse = await responsePromise.asResponse();
@@ -120,7 +120,7 @@ describe('resource block', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

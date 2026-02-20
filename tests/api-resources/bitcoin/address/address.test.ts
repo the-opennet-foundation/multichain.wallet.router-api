@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource address', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getInfo', async () => {
     const responsePromise = client.bitcoin.address.getInfo('address');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource address', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getUtxos', async () => {
     const responsePromise = client.bitcoin.address.getUtxos('address');
     const rawResponse = await responsePromise.asResponse();

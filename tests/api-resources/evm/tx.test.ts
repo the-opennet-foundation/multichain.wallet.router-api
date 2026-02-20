@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource tx', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByHash: only required params', async () => {
     const responsePromise = client.evm.tx.getByHash('txHash', { chainId: 'ethereum' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource tx', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByHash: required and optional params', async () => {
     const response = await client.evm.tx.getByHash('txHash', { chainId: 'ethereum' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('send', async () => {
     const responsePromise = client.evm.tx.send('ethereum', {});
     const rawResponse = await responsePromise.asResponse();

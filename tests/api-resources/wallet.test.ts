@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource wallet', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listChains', async () => {
     const responsePromise = client.wallet.listChains();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveChain', async () => {
     const responsePromise = client.wallet.retrieveChain('ethereum');
     const rawResponse = await responsePromise.asResponse();
