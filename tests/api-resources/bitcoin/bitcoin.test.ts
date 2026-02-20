@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource bitcoin', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDifficulty', async () => {
     const responsePromise = client.bitcoin.getDifficulty();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource bitcoin', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHashrate', async () => {
     const responsePromise = client.bitcoin.getHashrate();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource bitcoin', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHashrate: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -40,7 +40,7 @@ describe('resource bitcoin', () => {
     ).rejects.toThrow(MultichainWalletRouterAPI.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getInfo', async () => {
     const responsePromise = client.bitcoin.getInfo();
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource bitcoin', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrice', async () => {
     const responsePromise = client.bitcoin.getPrice();
     const rawResponse = await responsePromise.asResponse();
@@ -64,7 +64,7 @@ describe('resource bitcoin', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getUtxo: only required params', async () => {
     const responsePromise = client.bitcoin.getUtxo(0, { txid: 'txid' });
     const rawResponse = await responsePromise.asResponse();
@@ -76,12 +76,12 @@ describe('resource bitcoin', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getUtxo: required and optional params', async () => {
     const response = await client.bitcoin.getUtxo(0, { txid: 'txid', includeMempool: true });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('validateAddress', async () => {
     const responsePromise = client.bitcoin.validateAddress('address');
     const rawResponse = await responsePromise.asResponse();

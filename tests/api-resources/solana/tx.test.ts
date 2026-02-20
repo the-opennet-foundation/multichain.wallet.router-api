@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource tx', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.solana.tx.retrieve('signature');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource tx', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('send: only required params', async () => {
     const responsePromise = client.solana.tx.send({ signedTransaction: 'signedTransaction' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,12 +32,12 @@ describe('resource tx', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('send: required and optional params', async () => {
     const response = await client.solana.tx.send({ signedTransaction: 'signedTransaction' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('simulate: only required params', async () => {
     const responsePromise = client.solana.tx.simulate({ transaction: 'transaction' });
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource tx', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('simulate: required and optional params', async () => {
     const response = await client.solana.tx.simulate({ transaction: 'transaction' });
   });

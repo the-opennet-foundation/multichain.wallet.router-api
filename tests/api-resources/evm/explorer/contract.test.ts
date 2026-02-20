@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource contract', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAbi: only required params', async () => {
     const responsePromise = client.evm.explorer.contract.getAbi(
       '0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A',
@@ -23,14 +23,14 @@ describe('resource contract', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAbi: required and optional params', async () => {
     const response = await client.evm.explorer.contract.getAbi('0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A', {
       chainId: 'ethereum',
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSource: only required params', async () => {
     const responsePromise = client.evm.explorer.contract.getSource(
       '0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A',
@@ -45,7 +45,7 @@ describe('resource contract', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSource: required and optional params', async () => {
     const response = await client.evm.explorer.contract.getSource(
       '0x2c02efDd09B3BA1AEaDd3dCAa7aC7A37C1CBDA8A',

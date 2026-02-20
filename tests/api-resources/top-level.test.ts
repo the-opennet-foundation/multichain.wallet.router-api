@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('top level methods', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getInfo', async () => {
     const responsePromise = client.getInfo();
     const rawResponse = await responsePromise.asResponse();

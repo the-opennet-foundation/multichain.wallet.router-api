@@ -8,7 +8,7 @@ const client = new MultichainWalletRouterAPI({
 });
 
 describe('resource inflation', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getRate', async () => {
     const responsePromise = client.solana.inflation.getRate();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource inflation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getRewards: only required params', async () => {
     const responsePromise = client.solana.inflation.getRewards({ addresses: ['string'] });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource inflation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getRewards: required and optional params', async () => {
     const response = await client.solana.inflation.getRewards({ addresses: ['string'], epoch: 0 });
   });
